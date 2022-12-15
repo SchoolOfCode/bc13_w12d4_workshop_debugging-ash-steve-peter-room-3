@@ -7,15 +7,18 @@ function add(numb1, numb2) {
 // Check the type of the parameters entering/being used the function
 
 function multiply(num1, operator, num2) {
-  num1, operator, num2;
+  if(operator === '*'){
+    return num1 * num2;
+  }else {
+    return false
+  }
 }
 
 function hasPets(hasPet, firstName, lastName) {
-  if (hasPet === "true") {
+  if (hasPet === true) {
     return firstName + " " + lastName + " really does have a nice pet";
   } else {
-    return;
-    firstName + " " + lastName + " " + "has no pets";
+    return firstName + " " + lastName + " " + "has no pets";
   }
 }
 
@@ -27,31 +30,30 @@ let myAccountNumbers = {
 };
 
 function addsBalanceOfAccounts() {
-  let firstAccount = myAccountNumbers[1];
-  let secondAccount = myAccountNumbers["account3"];
+  let firstAccount = myAccountNumbers.account2;
+  let secondAccount = myAccountNumbers.account3;
   return firstAccount + secondAccount;
 }
 
 function calculator(firstNumber, operator, secondNumber) {
   if (operator === "+") {
     let answer = firstNumber + secondNumber;
-    return;
+    return answer;
   }
   if (operator === "-") {
     let answer = firstNumber - secondNumber;
-    return;
+    return answer;
   }
   if (operator === "*") {
     let answer = firstNumber * secondNumber;
-    return;
+    return answer;
   }
   if (operator === "/") {
     let answer = firstNumber / secondNumber;
-    return;
+    return answer;
   } else {
     let answer = "Invalid inputs. Try again!";
-    return;
-    answer;
+    return answer;
   }
 }
 
