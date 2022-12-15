@@ -1,7 +1,10 @@
 function add(numb1, numb2) {
-  let num1 = String(numb1);
-  return num1 + numb2;
+  numb1 + numb2;
+  return numb1 + numb2;
 }
+
+// Check the return value
+// Check the type of the parameters entering/being used the function
 
 function multiply(num1, operator, num2) {
   num1, operator, num2;
